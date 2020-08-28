@@ -4,7 +4,7 @@ This android library currently supports:
 - [OAuth 2.0 Authorization Code Flow](https://tools.ietf.org/html/rfc6749#section-4.1) using the [PKCE extension](https://tools.ietf.org/html/rfc7636)
 
 ## Table of Contents
-  * [Trying out the sample](#trying-out-the-sample)
+  * [Getting started](#getting-started)
     + [Configuring Identity Server](#configuring-identity-server)
     + [Configuring the sample](#configuring-the-sample)
     + [Running the sample](#running-the-sample)
@@ -28,8 +28,7 @@ This android library currently supports:
     + [Reporting issues](#reporting-issues)
   * [License](#license)
   
-## Trying out the sample
-### Configuring Identity Server
+## Getting started
 1. Start the WSO2 IS. 
 2. Access WSO2 IS management console from https://localhost:9443/carbon/ and create a service provider.
    ![Management Console](https://user-images.githubusercontent.com/15249242/91068131-6fc2d380-e651-11ea-9d0a-d58c825bbb68.png)
@@ -148,7 +147,6 @@ This android library currently supports:
 5. Run the the module `io.asgardio.android.oidc.sdk.sample` on the selected Android Device.
  
 ## Integrating OIDC SDK to your Android application
-### Getting started
 Throughout this section we will refer to the Identity Server installation directory as IS_HOME.
 
 These instructions will guide you on integrating OIDC into your Android application with the Asgardio Android OIDC SDK.
@@ -161,6 +159,18 @@ Here, we are using the sample as a reference only, we can follow the same approa
 The structure of the sample would be as follows:
 
 ![Sample Structure](https://user-images.githubusercontent.com/15249242/91576045-377b0800-e965-11ea-83b9-83549e77e720.png)
+
+## Installing the SDK
+Add [latest released SDK](https://github.com/asgardio/asgardio-android-oidc-sdk) in
+ your app's `build.gradle` file.
+
+```gradle
+dependencies {
+   dependencies {
+        implementation 'io.asgardio.android.oidc.sdk:io.asgardio.android.oidc.sdk:0.1.0'
+   }
+}
+```
 
 ### Configuring the sample
 1. Add [latest released SDK](https://github.com/asgardio/asgardio-android-oidc-sdk) in the `build.gradle` file of the module `io.asgardio.android.oidc.sdk.sample`.
@@ -376,30 +386,18 @@ private void getUserInfo(){
         }
     ```
 
-## Installing the SDK
-Add [latest released SDK](https://github.com/asgardio/asgardio-android-oidc-sdk) in
- your app's `build.gradle` file.
-
-```gradle
-dependencies {
-   dependencies {
-        implementation 'io.asgardio.android.oidc.sdk:io.asgardio.android.oidc.sdk:0.1.0'
-   }
-}
-```
-
-## Contributing
+# Contributing
 Please read [Contributing to the Code Base](http://wso2.github.io/) for details on our code of conduct, and the
  process for submitting pull requests to us.
  
-### Reporting issues
+## Reporting issues
 We encourage you to report issues, improvements, and feature requests creating [git Issues](https://github.com/wso2-extensions/identity-samples-dotnet/issues).
 
 Important: And please be advised that security issues must be reported to security@wso2.com, not as GitHub issues, 
 in order to reach the proper audience. We strongly advise following the WSO2 Security Vulnerability Reporting Guidelines
  when reporting the security issues.
 
-## License
+# License
 This project is licensed under the Apache License 2.0. See the [LICENSE
 ](LICENSE) file for details.
 
